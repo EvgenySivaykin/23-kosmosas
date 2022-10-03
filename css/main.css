@@ -3,10 +3,22 @@
     margin-left: calc((100% - 800px)/2);
     font-family: Montserrat;
 }
+.container.header {
+    display: inline-block; 
+    height: 13%;
+}
+.container.main {
+    display: inline-block; 
+    height: 70%; 
+    margin-top: 5px;
+}
+.container.footer {
+    height: 13%; 
+    margin-top: 20px;
+}
 
 /* HEADER */
 .logo {
-    margin-left: 15px;
     margin: 5px;
     height: 18px;
     background-color: #ffffff;
@@ -25,7 +37,10 @@
 }
 
 /* MAIN */
-.left-column {
+.container.main.left-column {
+    float: left; 
+    width: 45%; 
+    margin-left: 15px;
 }
 .main-title {
     font-size: 50px; margin-top: 50px; color: black;
@@ -34,6 +49,7 @@
     font-weight: 100;
 }
 .description {
+    float: top;
     font-size: 16px;
 }
 .btn {
@@ -55,10 +71,11 @@
 .btn.btn2 {
     background-color: #ffffff; /* white */
     color: #65398B;
-
 }
 
-.right-column {  
+.right-column {
+    float: right; 
+    width: 53%;
 }
 
 /* FOOTER */
@@ -67,7 +84,7 @@
     margin: 5px; 
     margin-left: 15px;
 }   
-.socials > .link { 
+.socials.link { 
     color: #CBCCCC; 
     float: left;
     font-size: 12px; 
