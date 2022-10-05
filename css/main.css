@@ -6,6 +6,10 @@ body {
     display: inline-block;
     width: 800px;
     margin-left: calc((100% - 800px)/2);
+    margin-bottom: 40px;
+}
+footer.container {
+    margin-bottom: 0;
 }
 
 /* HEADER */
@@ -39,51 +43,68 @@ body {
 }
 
 /* MAIN */
-.left-column { 
+.left-column {
     width: 40%; 
     float: left;
 }
 .main-title {
+    display: inline-block;
+    width: 100%;
     font-size: 50px; 
 }
 .main-title > span {
     font-weight: normal;
 }
-.line {
-    width: 100px;
-    height: 5px; 
-    margin-left: 15px; 
-    margin-top: -20px; 
-    margin-bottom: 15px;
+
+.main-title > .line {
+    display: block;
+    height: 4px;
+    width: 20%;
+    margin-left: 10px;
+    margin-bottom: -30px;
     background-color: #5A397F;
 }
 
 .description {
-    float: top;
-    font-size: 16px;
+    /* float: top; */
+    display: inline-block;
+    width: 100%;
     color: #a5a5a6;
+    margin-bottom: 50px;
 }
 .btn {
     display: inline-block;  
-    padding: 1em;
-    padding-left: 2em;
-    padding-right: 2em;
-    border: 2px solid #65398B;
+    padding: 0.8em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 0.2em solid #65398B;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 18px;
     font-weight: bold;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: 40px;
+    border-radius: 1.5em;
 }
+
 .btn.btn1 {
     background-color: #65398B; /* violet */
     color: #F7F6F8;
 }
+.btn.btn1:hover {
+    background-color: #ffffff;
+    color: #65398B;
+}
+
 .btn.btn2 {
     background-color: #ffffff; /* white */
     color: #65398B;
+}
+.btn.btn2:hover {
+    background-color: #65398B;
+    color: #ffffff;
 }
 
 .right-column {
@@ -91,20 +112,30 @@ body {
     float: right;
 }
 
+
 /* FOOTER */
 .socials {
     float: left; 
-    margin: 10px; 
-    margin-left: 15px;
-    /* color: #CBCCCC; */
 }   
 .socials > .link { 
-    /* color: #CBCCCC;  */
+    height: 2em;
+    width: 2em;
     float: left;
-    font-size: 16px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 2em;
+    color: #CBCCCC;
+    text-decoration: none;
 }
+.socials > .link:hover {
+    background-color: #65398B;
+    color: #ffffff;
+    border-radius: 50%;
+    /* border-radius: 1em; */
+}
+
 .copyright {
-    color: #6c6364; 
+    color: #6c6364;
     float: right;
     font-size: 16px; 
     margin: 5px; 
